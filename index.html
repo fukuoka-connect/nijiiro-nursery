@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>にじいろ保育園 | 福岡県糟屋郡志免町の少人数制保育園</title>
+<meta name="description" content="にじいろ保育園は福岡県糟屋郡志免町の少人数制保育園。定員30名だからこそできる、一人ひとりに寄り添う保育。自然体験・食育・英語遊びで子どもの「やってみたい」を育てます。見学予約受付中。">
+<link rel="canonical" href="https://example.com/nijiiro-nursery/">
+<meta property="og:title" content="にじいろ保育園 | 志免町の少人数制保育園">
+<meta property="og:description" content="定員30名の少人数制。自然体験・食育・英語遊びで、子どもの「やってみたい」を育てる保育園です。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/nijiiro-nursery/">
+<meta property="og:site_name" content="にじいろ保育園">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Yomogi&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ChildCare",
+  "name": "にじいろ保育園",
+  "description": "福岡県糟屋郡志免町の少人数制保育園。定員30名、自然体験・食育・英語遊び。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "糟屋郡志免町",
+    "addressRegion": "福岡県",
+    "addressCountry": "JP"
+  },
+  "openingHours": "Mo-Sa 07:00-19:00",
+  "telephone": "092-000-0000"
+}
+</script>
+<style>
+/* ===========================
+   CSS VARIABLES
+   =========================== */
+:root {
+  --sky: #0fc1ef;
+  --sky-dark: #0aa8d3;
+  --yellow: #fffd05;
+  --yellow-soft: #fff176;
+  --cream: #fefbc9;
+  --light-blue: #cef3ff;
+  --ice: #f3f7fc;
+  --white: #ffffff;
+  --dark: #2d2d2d;
+  --dark-soft: #4a4a4a;
+  --gray: #888;
+  --radius-blob: 62% 38% 46% 54% / 60% 44% 56% 40%;
+  --radius-blob-2: 40% 60% 55% 45% / 38% 62% 38% 62%;
+  --radius-blob-3: 55% 45% 38% 62% / 48% 52% 48% 52%;
+}
+
+/* ===========================
+   RESET & BASE
+   =========================== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Zen Maru Gothic', 'Hiragino Maru Gothic Pro', sans-serif;
+  color: var(--dark);
+  line-height: 1.8;
+  overflow-x: hidden;
+  background: var(--ice);
+}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; height: auto; display: block; }
+.sm { font-size: 0.78em; }
+
+/* ===========================
+   UTILITY
+   =========================== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.accent-text { color: var(--sky); }
+.yellow-text { color: #e6a800; }
+
+/* ===========================
+   NAV
+   =========================== */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 16px rgba(15,193,239,0.08);
+  transition: box-shadow 0.3s;
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--sky);
+}
+.nav-logo .rainbow-dot {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #ff6b6b, #ffa94d, var(--yellow), #51cf66, var(--sky), #845ef7);
+  border-radius: var(--radius-blob);
+  animation: blobRotate 8s ease-in-out infinite;
+}
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--sky);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: transform 0.22s cubic-bezier(.25,.46,.45,.94), background 0.22s;
+  box-shadow: 0 4px 14px rgba(15,193,239,0.3);
+}
+.nav-cta:hover {
+  transform: scale(1.05);
+  background: var(--sky-dark);
+}
+
+/* ===========================
+   HERO
+   =========================== */
+.hero {
+  position: relative;
+  padding: 140px 0 80px;
+  background: var(--cream);
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero-bg-blob-1 {
+  position: absolute;
+  top: -80px;
+  right: -120px;
+  width: 500px;
+  height: 500px;
+  background: rgba(15,193,239,0.12);
+  border-radius: var(--radius-blob);
+  animation: blobFloat 12s ease-in-out infinite;
+  z-index: 0;
+}
+.hero-bg-blob-2 {
+  position: absolute;
+  bottom: -60px;
+  left: -80px;
+  width: 350px;
+  height: 350px;
+  background: rgba(255,253,5,0.18);
+  border-radius: var(--radius-blob-2);
+  animation: blobFloat 10s ease-in-out infinite reverse;
+  z-index: 0;
+}
+.hero-bg-blob-3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,107,107,0.08);
+  border-radius: var(--radius-blob-3);
+  animation: blobFloat 14s ease-in-out infinite;
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero-catch-sub {
+  font-family: 'Yomogi', cursive;
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  color: var(--sky);
+  margin-bottom: 12px;
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+.hero-catch {
+  font-size: clamp(2rem, 7vw, 3.8rem);
+  font-weight: 900;
+  line-height: 1.35;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+.hero-catch .line-1 {
+  display: block;
+}
+.hero-catch .line-2 {
+  display: block;
+  padding-left: 1.5em;
+  color: var(--sky);
+}
+.hero-catch .pop-word {
+  display: inline-block;
+  background: var(--yellow);
+  padding: 2px 12px;
+  border-radius: 8px;
+  transform: rotate(1.5deg);
+  color: var(--dark);
+}
+.hero-copy {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  color: var(--dark-soft);
+  max-width: 520px;
+  margin: 20px 0 36px;
+  line-height: 2;
+}
+.hero-cta-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--sky);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 16px 36px;
+  border-radius: 60px;
+  box-shadow: 0 6px 24px rgba(15,193,239,0.35);
+  transition: transform 0.22s cubic-bezier(.25,.46,.45,.94), box-shadow 0.48s;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 32px rgba(15,193,239,0.45);
+}
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  color: var(--sky);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: 60px;
+  border: 2.5px solid var(--sky);
+  transition: transform 0.22s cubic-bezier(.25,.46,.45,.94), background 0.48s;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  background: var(--light-blue);
+}
+.hero-deco-stars {
+  position: absolute;
+  top: 15%;
+  right: 8%;
+  z-index: 1;
+}
+.hero-illustration {
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+  width: clamp(200px, 35vw, 450px);
+  z-index: 1;
+  opacity: 0.9;
+}
+
+/* Crayon-style decorations */
+.crayon-line {
+  position: absolute;
+  height: 4px;
+  border-radius: 4px;
+  opacity: 0.6;
+}
+
+/* ===========================
+   WAVE DIVIDERS
+   =========================== */
+.wave-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.wave-divider.flip {
+  transform: scaleY(-1);
+}
+
+/* ===========================
+   STRIP (Numbers)
+   =========================== */
+.strip {
+  background: var(--sky);
+  padding: 40px 0;
+  position: relative;
+}
+.strip-inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px 48px;
+}
+.strip-item {
+  text-align: center;
+  color: var(--white);
+}
+.strip-num {
+  font-size: clamp(2.4rem, 6vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  text-shadow: 2px 3px 0 rgba(0,0,0,0.08);
+}
+.strip-num .unit {
+  font-size: 0.4em;
+  font-weight: 500;
+}
+.strip-label {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-top: 4px;
+  font-family: 'Yomogi', cursive;
+}
+.strip-deco {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.12);
+  border-radius: var(--radius-blob);
+  animation: blobFloat 8s ease-in-out infinite;
+}
+.strip-deco:nth-child(2) { top: -15px; left: 8%; width: 45px; height: 45px; }
+.strip-deco:nth-child(3) { bottom: -20px; right: 12%; width: 70px; height: 70px; animation-delay: -4s; border-radius: var(--radius-blob-2); }
+
+/* ===========================
+   CONCEPT
+   =========================== */
+.concept {
+  padding: 100px 0 80px;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.concept-blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(206,243,255,0.5);
+  border-radius: var(--radius-blob-3);
+  top: -80px;
+  right: -100px;
+  z-index: 0;
+}
+.concept-inner {
+  position: relative;
+  z-index: 1;
+}
+.section-label {
+  font-family: 'Yomogi', cursive;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: var(--sky);
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.section-title {
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-weight: 900;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+.section-title .highlight {
+  position: relative;
+  display: inline;
+}
+.section-title .highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  right: -4px;
+  height: 0.35em;
+  background: var(--yellow);
+  opacity: 0.5;
+  z-index: -1;
+  border-radius: 4px;
+  transform: rotate(-0.5deg);
+}
+.concept-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.concept-text {
+  font-size: 1rem;
+  line-height: 2.1;
+  color: var(--dark-soft);
+}
+.concept-text strong {
+  color: var(--sky);
+  font-weight: 700;
+}
+.concept-visual {
+  position: relative;
+}
+.concept-img-wrap {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: var(--cream);
+  border-radius: var(--radius-blob);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: blobRotate 20s ease-in-out infinite;
+  box-shadow: 0 8px 32px rgba(15,193,239,0.1);
+}
+.concept-img-wrap svg { width: 60%; }
+.concept-deco-circle {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 3px dashed var(--yellow-soft);
+  border-radius: 50%;
+  top: -20px;
+  right: -20px;
+  animation: spinSlow 16s linear infinite;
+}
+
+/* ===========================
+   PROGRAM
+   =========================== */
+.program {
+  padding: 80px 0 100px;
+  background: var(--light-blue);
+  position: relative;
+  overflow: hidden;
+}
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 48px;
+}
+.program-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 36px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.22s cubic-bezier(.25,.46,.45,.94), box-shadow 0.48s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+}
+.program-card:hover {
+  transform: translateY(-6px) rotate(-0.5deg);
+  box-shadow: 0 12px 36px rgba(15,193,239,0.12);
+}
+/* Non-uniform card styling */
+.program-card:nth-child(1) {
+  border-radius: 24px 60px 24px 24px;
+  transform-origin: bottom left;
+}
+.program-card:nth-child(2) {
+  margin-top: 24px;
+  border-radius: 60px 24px 24px 24px;
+}
+.program-card:nth-child(3) {
+  margin-top: -16px;
+  border-radius: 24px 24px 60px 24px;
+}
+.program-card:nth-child(4) {
+  border-radius: 24px 24px 24px 60px;
+  margin-top: 8px;
+}
+.program-card:nth-child(1):hover { transform: translateY(-6px) rotate(-1deg); }
+.program-card:nth-child(2):hover { transform: translateY(-6px) rotate(0.8deg); }
+.program-card:nth-child(3):hover { transform: translateY(-6px) rotate(-0.5deg); }
+.program-card:nth-child(4):hover { transform: translateY(-6px) rotate(1deg); }
+
+.program-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-blob);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+.program-card:nth-child(1) .program-icon { background: rgba(15,193,239,0.12); }
+.program-card:nth-child(2) .program-icon { background: rgba(81,207,102,0.15); }
+.program-card:nth-child(3) .program-icon { background: rgba(255,169,77,0.15); }
+.program-card:nth-child(4) .program-icon { background: rgba(132,94,247,0.12); }
+
+.program-card-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.program-card-text {
+  font-size: 0.92rem;
+  color: var(--dark-soft);
+  line-height: 1.85;
+}
+.program-card-img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.program-card-tag {
+  display: inline-block;
+  font-family: 'Yomogi', cursive;
+  font-size: 0.75rem;
+  color: var(--sky);
+  background: var(--light-blue);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-top: 12px;
+}
+.program-deco {
+  position: absolute;
+  z-index: 0;
+}
+.program-deco-1 {
+  width: 120px;
+  height: 120px;
+  background: rgba(255,253,5,0.15);
+  border-radius: var(--radius-blob);
+  top: -40px;
+  left: -40px;
+  animation: blobFloat 10s ease-in-out infinite;
+}
+.program-deco-2 {
+  width: 80px;
+  height: 80px;
+  background: rgba(255,107,107,0.08);
+  border-radius: var(--radius-blob-2);
+  bottom: 40px;
+  right: -30px;
+  animation: blobFloat 12s ease-in-out infinite reverse;
+}
+
+/* ===========================
+   DAILY (Timeline)
+   =========================== */
+.daily {
+  padding: 100px 0 80px;
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+.daily-timeline {
+  position: relative;
+  margin-top: 48px;
+  padding-left: 40px;
+}
+.daily-timeline::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, var(--sky), var(--yellow-soft), #ff6b6b, var(--sky));
+  border-radius: 4px;
+}
+.daily-item {
+  position: relative;
+  padding: 0 0 48px 28px;
+}
+.daily-item:last-child { padding-bottom: 0; }
+.daily-dot {
+  position: absolute;
+  left: -33px;
+  top: 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.daily-item:nth-child(1) .daily-dot { background: var(--sky); }
+.daily-item:nth-child(2) .daily-dot { background: #51cf66; }
+.daily-item:nth-child(3) .daily-dot { background: var(--yellow-soft); }
+.daily-item:nth-child(4) .daily-dot { background: #ffa94d; }
+.daily-item:nth-child(5) .daily-dot { background: #ff6b6b; }
+.daily-item:nth-child(6) .daily-dot { background: #845ef7; }
+.daily-item:nth-child(7) .daily-dot { background: var(--sky); }
+
+.daily-time {
+  font-family: 'Yomogi', cursive;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--sky);
+}
+.daily-title {
+  font-size: 1.15rem;
+  font-weight: 900;
+  margin: 4px 0 6px;
+}
+.daily-desc {
+  font-size: 0.9rem;
+  color: var(--dark-soft);
+  line-height: 1.7;
+}
+.daily-item:nth-child(even) {
+  padding-left: 36px;
+}
+.daily-deco-blob {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(15,193,239,0.06);
+  border-radius: var(--radius-blob-2);
+  right: -60px;
+  top: 20%;
+  animation: blobFloat 14s ease-in-out infinite;
+}
+
+/* ===========================
+   VOICE
+   =========================== */
+.voice {
+  padding: 80px 0 100px;
+  background: var(--ice);
+  position: relative;
+  overflow: hidden;
+}
+.voice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-top: 48px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.voice-card {
+  position: relative;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 32px 28px 28px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+}
+/* Speech bubble tail */
+.voice-card::after {
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  width: 28px;
+  height: 28px;
+  background: var(--white);
+  border-radius: 0 0 0 8px;
+  transform: rotate(-35deg) skewY(-8deg);
+}
+.voice-card:nth-child(1)::after { left: 40px; }
+.voice-card:nth-child(2)::after { right: 60px; left: auto; }
+.voice-card:nth-child(3)::after { left: 80px; }
+
+.voice-card:nth-child(1) { border-left: 4px solid var(--sky); }
+.voice-card:nth-child(2) {
+  border-left: 4px solid var(--yellow-soft);
+  margin-left: 5%;
+}
+.voice-card:nth-child(3) {
+  border-left: 4px solid #ff6b6b;
+  margin-left: -2%;
+}
+
+.voice-text {
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--dark-soft);
+  margin-bottom: 16px;
+}
+.voice-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.voice-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.voice-card:nth-child(1) .voice-avatar { background: var(--light-blue); }
+.voice-card:nth-child(2) .voice-avatar { background: var(--cream); }
+.voice-card:nth-child(3) .voice-avatar { background: #ffe0e0; }
+.voice-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.voice-detail {
+  font-size: 0.78rem;
+  color: var(--gray);
+}
+.voice-stars {
+  color: #ffa94d;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.voice-deco {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background: rgba(254,251,201,0.5);
+  border-radius: var(--radius-blob);
+  top: -50px;
+  left: -60px;
+  z-index: 0;
+  animation: blobFloat 12s ease-in-out infinite;
+}
+
+/* ===========================
+   ACCESS
+   =========================== */
+.access {
+  padding: 80px 0 60px;
+  background: var(--white);
+  position: relative;
+}
+.access-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: start;
+}
+.access-map {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: var(--light-blue);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.access-map-placeholder {
+  text-align: center;
+  color: var(--sky);
+  font-family: 'Yomogi', cursive;
+}
+.access-map-placeholder svg { margin: 0 auto 12px; }
+.access-info {
+  font-size: 0.95rem;
+}
+.access-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.access-table th {
+  text-align: left;
+  font-weight: 700;
+  padding: 12px 0;
+  width: 110px;
+  color: var(--sky);
+  font-size: 0.9rem;
+  vertical-align: top;
+  border-bottom: 1px dashed rgba(15,193,239,0.2);
+}
+.access-table td {
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(15,193,239,0.2);
+  font-size: 0.92rem;
+  color: var(--dark-soft);
+}
+.access-table tr:last-child th,
+.access-table tr:last-child td { border-bottom: none; }
+
+/* ===========================
+   CTA (Final)
+   =========================== */
+.cta-final {
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--sky) 0%, #47d4ff 100%);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.cta-final-blob-1 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(255,255,255,0.08);
+  border-radius: var(--radius-blob);
+  top: -60px;
+  right: -80px;
+  animation: blobFloat 10s ease-in-out infinite;
+}
+.cta-final-blob-2 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: rgba(255,253,5,0.1);
+  border-radius: var(--radius-blob-2);
+  bottom: -40px;
+  left: -60px;
+  animation: blobFloat 12s ease-in-out infinite reverse;
+}
+.cta-final-content {
+  position: relative;
+  z-index: 2;
+}
+.cta-final-catch {
+  font-family: 'Yomogi', cursive;
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 8px;
+}
+.cta-final-title {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: 900;
+  color: var(--white);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.cta-final-sub {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 36px;
+  line-height: 1.8;
+}
+.cta-final-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.btn-cta-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  color: var(--sky);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 18px 40px;
+  border-radius: 60px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  transition: transform 0.22s cubic-bezier(.25,.46,.45,.94), box-shadow 0.48s;
+  border: none;
+  cursor: pointer;
+}
+.btn-cta-white:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 36px rgba(0,0,0,0.18);
+}
+.btn-cta-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #06c755;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 18px 40px;
+  border-radius: 60px;
+  box-shadow: 0 6px 24px rgba(6,199,85,0.3);
+  transition: transform 0.22s cubic-bezier(.25,.46,.45,.94), box-shadow 0.48s;
+  border: none;
+  cursor: pointer;
+}
+.btn-cta-line:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 36px rgba(6,199,85,0.4);
+}
+.cta-final-note {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 20px;
+  font-family: 'Yomogi', cursive;
+}
+.cta-loss {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  color: var(--white);
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.footer {
+  background: var(--dark);
+  color: rgba(255,255,255,0.7);
+  padding: 40px 0 24px;
+  text-align: center;
+}
+.footer-logo {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.footer-address {
+  font-size: 0.82rem;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+.footer-copy {
+  font-size: 0.72rem;
+  opacity: 0.5;
+}
+
+/* ===========================
+   ANIMATIONS
+   =========================== */
+@keyframes blobFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(15px, -20px) scale(1.05); }
+  66% { transform: translate(-10px, 10px) scale(0.96); }
+}
+@keyframes blobRotate {
+  0%, 100% { border-radius: 62% 38% 46% 54% / 60% 44% 56% 40%; }
+  25% { border-radius: 40% 60% 55% 45% / 38% 62% 38% 62%; }
+  50% { border-radius: 55% 45% 38% 62% / 48% 52% 48% 52%; }
+  75% { border-radius: 45% 55% 60% 40% / 55% 45% 40% 60%; }
+}
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+/* Intersection Observer reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(.25,.46,.45,.94), transform 0.6s cubic-bezier(.25,.46,.45,.94);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ===========================
+   ZIGZAG DIVIDER
+   =========================== */
+.zigzag-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 0 60px;
+    min-height: auto;
+  }
+  .hero-illustration {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 70%;
+    margin: 32px auto 0;
+  }
+  .concept-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+  .program-card:nth-child(2),
+  .program-card:nth-child(3),
+  .program-card:nth-child(4) {
+    margin-top: 0;
+  }
+  .access-grid {
+    grid-template-columns: 1fr;
+  }
+  .daily-timeline { padding-left: 32px; }
+  .daily-item:nth-child(even) { padding-left: 28px; }
+  .hero-bg-blob-1 { width: 280px; height: 280px; }
+  .hero-bg-blob-2 { width: 200px; height: 200px; }
+  .strip-inner { gap: 16px 28px; }
+  .voice-card:nth-child(2),
+  .voice-card:nth-child(3) { margin-left: 0; }
+  .cta-final-buttons { flex-direction: column; align-items: center; }
+}
+@media (max-width: 480px) {
+  .hero-catch { font-size: 1.8rem; }
+  .hero-catch .line-2 { padding-left: 0.5em; }
+  .section-title { font-size: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===========================
+     NAV
+     =========================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <span class="rainbow-dot" aria-hidden="true"></span>
+      にじいろ保育園
+    </a>
+    <a href="#contact" class="nav-cta">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      見学予約
+    </a>
+  </div>
+</nav>
+
+<!-- ===========================
+     HERO
+     =========================== -->
+<section class="hero" id="top">
+  <div class="hero-bg-blob-1" aria-hidden="true"></div>
+  <div class="hero-bg-blob-2" aria-hidden="true"></div>
+  <div class="hero-bg-blob-3" aria-hidden="true"></div>
+
+  <!-- Crayon decorations -->
+  <div class="crayon-line" style="top:18%;left:5%;width:60px;background:#ff6b6b;transform:rotate(-15deg);" aria-hidden="true"></div>
+  <div class="crayon-line" style="top:70%;right:15%;width:80px;background:var(--sky);transform:rotate(8deg);" aria-hidden="true"></div>
+  <div class="crayon-line" style="top:45%;left:12%;width:40px;background:#51cf66;transform:rotate(-25deg);" aria-hidden="true"></div>
+
+  <div class="container hero-content">
+    <p class="hero-catch-sub">ー 定員30名<span class="sm">の</span>ちいさな世界 ー</p>
+    <h1 class="hero-catch">
+      <span class="line-1">「やってみたい！」<span class="sm">が</span></span>
+      <span class="line-2"><span class="pop-word">まいにち</span>あふれる場所</span>
+    </h1>
+    <p class="hero-copy">
+      ひとり<span class="sm">ひとりの</span>「なんだろう？」<span class="sm">を</span>見逃さない。<br>
+      少人数<span class="sm">だから</span>できる、寄り添う保育<span class="sm">が</span>ここにあります。
+    </p>
+    <div class="hero-cta-area">
+      <a href="#contact" class="btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        見学予約<span class="sm">する</span>
+      </a>
+      <a href="#about" class="btn-secondary">園<span class="sm">に</span>ついて見る</a>
+    </div>
+  </div>
+
+  <!-- Hero illustration (Generated images) -->
+  <div class="hero-illustration" aria-hidden="true">
+    <img src="images/hero-rainbow.png" alt="" style="width:100%;position:relative;z-index:1;">
+    <img src="images/hero-children.png" alt="" style="width:70%;position:absolute;bottom:-10%;left:15%;z-index:2;">
+  </div>
+</section>
+
+<!-- Wave divider: cream → sky -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#0fc1ef"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     STRIP
+     =========================== -->
+<section class="strip">
+  <div class="strip-deco" aria-hidden="true"></div>
+  <div class="strip-deco" aria-hidden="true"></div>
+  <div class="container strip-inner">
+    <div class="strip-item reveal">
+      <div class="strip-num">30<span class="unit">名</span></div>
+      <div class="strip-label">定員だから安心</div>
+    </div>
+    <div class="strip-item reveal reveal-delay-1">
+      <div class="strip-num">19<span class="unit">年目</span></div>
+      <div class="strip-label">地域に根ざした保育</div>
+    </div>
+    <div class="strip-item reveal reveal-delay-2">
+      <div class="strip-num">100<span class="unit">%</span></div>
+      <div class="strip-label">手作り給食</div>
+    </div>
+    <div class="strip-item reveal reveal-delay-3">
+      <div class="strip-num">7:00<span class="unit">〜</span></div>
+      <div class="strip-label">早朝から対応</div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave divider: sky → white -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 L0,40 C360,80 720,0 1080,40 C1260,60 1380,30 1440,40 L1440,0 Z" fill="#0fc1ef"/>
+    <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,30 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     CONCEPT
+     =========================== -->
+<section class="concept" id="about">
+  <div class="concept-blob" aria-hidden="true"></div>
+  <div class="container concept-inner">
+    <div class="concept-grid">
+      <div>
+        <span class="section-label reveal">OUR CONCEPT</span>
+        <h2 class="section-title reveal">
+          「<span class="highlight">みんなちがって</span>、<br>
+          みんないい」<span class="sm">を</span><br>
+          まんなか<span class="sm">に</span>。
+        </h2>
+        <p class="concept-text reveal">
+          にじいろ保育園<span class="sm">は</span>、子ども<span class="sm">たちの</span><strong>「やってみたい」</strong><span class="sm">という</span>気持ち<span class="sm">を</span>何<span class="sm">より</span>大切<span class="sm">に</span>しています。<br><br>
+          走る<span class="sm">のが</span>好き<span class="sm">な</span>子も、絵<span class="sm">を</span>描く<span class="sm">のが</span>好き<span class="sm">な</span>子も、じっくり考える<span class="sm">のが</span>好き<span class="sm">な</span>子も。<br>
+          30人<span class="sm">の</span>ちいさな世界<span class="sm">だから</span>、<strong>ひとり<span class="sm">ひとりの</span>「いいところ」</strong><span class="sm">を</span>毎日見つけられます。<br><br>
+          自然<span class="sm">の</span>中<span class="sm">で</span>遊んで、みんな<span class="sm">で</span>ごはん<span class="sm">を</span>食べて、英語<span class="sm">で</span>歌う。<br>
+          <strong>にじいろ<span class="sm">の</span>毎日</strong><span class="sm">が</span>、この子<span class="sm">の</span>未来<span class="sm">を</span>つくる。
+        </p>
+      </div>
+      <div class="concept-visual reveal">
+        <div class="concept-img-wrap">
+          <img src="images/concept-garden.png" alt="にじいろ保育園の園庭" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="concept-deco-circle" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Zigzag divider: white → light-blue -->
+<div class="zigzag-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="0,0 80,60 160,0 240,60 320,0 400,60 480,0 560,60 640,0 720,60 800,0 880,60 960,0 1040,60 1120,0 1200,60 1280,0 1360,60 1440,0 1440,60 0,60" fill="#cef3ff"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     PROGRAM
+     =========================== -->
+<section class="program" id="program">
+  <div class="program-deco program-deco-1" aria-hidden="true"></div>
+  <div class="program-deco program-deco-2" aria-hidden="true"></div>
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-label reveal">PROGRAM</span>
+      <h2 class="section-title reveal" style="text-align:center;">
+        4<span class="sm">つの</span><span class="highlight">にじいろ</span>プログラム
+      </h2>
+    </div>
+    <div class="program-grid">
+
+      <div class="program-card reveal">
+        <img src="images/hero-children.png" alt="少人数制保育" class="program-card-img">
+        <div class="program-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0fc1ef" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3 class="program-card-title">少人数制保育</h3>
+        <p class="program-card-text">定員30名。先生<span class="sm">の</span>目<span class="sm">が</span>すみずみ<span class="sm">まで</span>届く<span class="sm">から</span>、一人<span class="sm">ひとりの</span>小さな成長<span class="sm">も</span>見逃しません。お子さま<span class="sm">の</span>ペース<span class="sm">に</span>合わせた保育<span class="sm">を</span>大切<span class="sm">に</span>しています。</p>
+        <span class="program-card-tag">0〜5歳 / 異年齢交流</span>
+      </div>
+
+      <div class="program-card reveal reveal-delay-1">
+        <img src="images/program-nature.png" alt="自然体験プログラム" class="program-card-img">
+        <div class="program-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#51cf66" stroke-width="2" stroke-linecap="round"><path d="M12 22c4.97 0 9-2.24 9-5v-4M12 22c-4.97 0-9-2.24-9-5v-4M12 22V12m9-3c0 2.76-4.03 5-9 5s-9-2.24-9-5"/><ellipse cx="12" cy="5" rx="9" ry="5"/><path d="M7 9v2m5-4v4m5-2v2"/></svg>
+        </div>
+        <h3 class="program-card-title">自然体験プログラム</h3>
+        <p class="program-card-text">園庭<span class="sm">の</span>畑、虫<span class="sm">の</span>観察、季節<span class="sm">の</span>お散歩。五感<span class="sm">で</span>感じる体験<span class="sm">が</span>、子ども<span class="sm">の</span>「なぜ？」<span class="sm">を</span>育てます。志免町<span class="sm">の</span>豊かな自然<span class="sm">が</span>フィールドです。</p>
+        <span class="program-card-tag">毎日のお散歩 / 季節の行事</span>
+      </div>
+
+      <div class="program-card reveal reveal-delay-2">
+        <img src="images/program-food.png" alt="食育へのこだわり" class="program-card-img">
+        <div class="program-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffa94d" stroke-width="2" stroke-linecap="round"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <h3 class="program-card-title">食育<span class="sm">への</span>こだわり</h3>
+        <p class="program-card-text">給食<span class="sm">は</span>すべて手作り。地元<span class="sm">の</span>食材<span class="sm">を</span>使い、「おいしい」<span class="sm">から</span>始まる食<span class="sm">への</span>興味<span class="sm">を</span>育てます。みんな<span class="sm">で</span>育てた野菜<span class="sm">が</span>給食<span class="sm">に</span>なる喜び<span class="sm">も</span>。</p>
+        <span class="program-card-tag">アレルギー対応可 / 手作り100%</span>
+      </div>
+
+      <div class="program-card reveal reveal-delay-3">
+        <img src="images/program-english.png" alt="英語あそび" class="program-card-img">
+        <div class="program-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#845ef7" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <h3 class="program-card-title">英語あそび</h3>
+        <p class="program-card-text">歌やゲーム<span class="sm">を</span>通じて、遊び<span class="sm">の</span>中<span class="sm">で</span>英語<span class="sm">に</span>触れます。「お勉強」<span class="sm">じゃなくて</span>「楽しい！」<span class="sm">が</span>入口。ネイティブ講師<span class="sm">と</span>週2回、笑顔<span class="sm">で</span>英語<span class="sm">の</span>時間<span class="sm">を</span>過ごします。</p>
+        <span class="program-card-tag">週2回 / ネイティブ講師</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Wave divider: light-blue → cream -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C180,70 360,10 540,40 C720,70 900,10 1080,40 C1260,70 1380,30 1440,50 L1440,80 L0,80 Z" fill="#fefbc9"/>
+    <path d="M0,0 L1440,0 L1440,30 C1260,70 1080,10 900,40 C720,70 540,10 360,40 C180,70 0,30 0,30 Z" fill="#cef3ff"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     DAILY (Timeline)
+     =========================== -->
+<section class="daily" id="daily">
+  <div class="daily-deco-blob" aria-hidden="true"></div>
+  <div class="container">
+    <span class="section-label reveal">DAILY SCHEDULE</span>
+    <h2 class="section-title reveal">
+      にじいろ<span class="sm">の</span><span class="highlight">1日</span>
+    </h2>
+
+    <div class="daily-timeline">
+      <div class="daily-item reveal">
+        <div class="daily-dot"></div>
+        <div class="daily-time">7:00〜</div>
+        <div class="daily-title">おはよう！順次登園</div>
+        <div class="daily-desc">元気<span class="sm">に</span>「おはよう！」。自由遊び<span class="sm">の</span>時間<span class="sm">で</span>、好き<span class="sm">な</span>遊び<span class="sm">を</span>見つけよう。</div>
+      </div>
+      <div class="daily-item reveal reveal-delay-1">
+        <div class="daily-dot"></div>
+        <div class="daily-time">9:30〜</div>
+        <div class="daily-title">おあつまり & 朝<span class="sm">の</span>うた</div>
+        <div class="daily-desc">季節<span class="sm">の</span>歌<span class="sm">を</span>うたって、今日<span class="sm">の</span>活動<span class="sm">を</span>お話しします。</div>
+      </div>
+      <div class="daily-item reveal reveal-delay-1">
+        <div class="daily-dot"></div>
+        <div class="daily-time">10:00〜</div>
+        <div class="daily-title">主活動（お外遊び / 制作 / 英語あそび）</div>
+        <div class="daily-desc">天気<span class="sm">のいい</span>日<span class="sm">は</span>お散歩<span class="sm">や</span>園庭遊び。雨<span class="sm">の</span>日<span class="sm">も</span>室内<span class="sm">で</span>たのしく。</div>
+      </div>
+      <div class="daily-item reveal reveal-delay-2">
+        <div class="daily-dot"></div>
+        <div class="daily-time">11:30〜</div>
+        <div class="daily-title">みんな<span class="sm">で</span>手作りきゅうしょく</div>
+        <div class="daily-desc">「いただきます！」。地元食材<span class="sm">の</span>あたたかい給食<span class="sm">を</span>いただきます。</div>
+      </div>
+      <div class="daily-item reveal reveal-delay-2">
+        <div class="daily-dot"></div>
+        <div class="daily-time">13:00〜</div>
+        <div class="daily-title">おひるね</div>
+        <div class="daily-desc">静か<span class="sm">な</span>音楽<span class="sm">の</span>中、ゆっくりお昼寝。年長さん<span class="sm">は</span>自由活動<span class="sm">も</span>。</div>
+      </div>
+      <div class="daily-item reveal reveal-delay-3">
+        <div class="daily-dot"></div>
+        <div class="daily-time">15:00〜</div>
+        <div class="daily-title">おやつ & 午後<span class="sm">の</span>あそび</div>
+        <div class="daily-desc">手作りおやつ<span class="sm">を</span>食べたら、自由遊び<span class="sm">の</span>時間。</div>
+      </div>
+      <div class="daily-item reveal reveal-delay-4">
+        <div class="daily-dot"></div>
+        <div class="daily-time">16:00〜19:00</div>
+        <div class="daily-title">順次降園 / 延長保育</div>
+        <div class="daily-desc">「また明日ね！」。延長保育<span class="sm">は</span>19:00<span class="sm">まで</span>対応しています。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave divider: cream → ice -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,20 Q360,70 720,30 Q1080,-10 1440,30 L1440,80 L0,80 Z" fill="#f3f7fc"/>
+    <path d="M0,0 L1440,0 L1440,20 Q1080,-10 720,30 Q360,70 0,20 Z" fill="#fefbc9"/>
+  </svg>
+</div>
+
+<!-- Floating decoration -->
+<div style="position:relative;pointer-events:none;height:0;overflow:visible;z-index:0;">
+  <img src="images/deco-elements.png" alt="" aria-hidden="true" style="position:absolute;top:-80px;right:-40px;width:180px;opacity:0.15;transform:rotate(12deg);">
+  <img src="images/deco-elements.png" alt="" aria-hidden="true" style="position:absolute;top:-60px;left:-30px;width:140px;opacity:0.12;transform:rotate(-20deg) scaleX(-1);">
+</div>
+
+<!-- ===========================
+     VOICE
+     =========================== -->
+<section class="voice" id="voice">
+  <div class="voice-deco" aria-hidden="true"></div>
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-label reveal">PARENTS' VOICE</span>
+      <h2 class="section-title reveal" style="text-align:center;">
+        保護者<span class="sm">の</span>方<span class="sm">から</span><span class="highlight">うれしい声</span>
+      </h2>
+    </div>
+
+    <div class="voice-grid">
+      <div class="voice-card reveal">
+        <div class="voice-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="voice-text">
+          人見知り<span class="sm">だった</span>娘<span class="sm">が</span>、入園して1<span class="sm">ヶ</span>月<span class="sm">で</span>「先生大好き！」<span class="sm">と</span>言うように<span class="sm">なりました</span>。少人数<span class="sm">だから</span>先生<span class="sm">との</span>距離<span class="sm">が</span>近くて、安心して預けられます。毎日<span class="sm">の</span>連絡帳<span class="sm">も</span>丁寧<span class="sm">で</span>、園<span class="sm">での</span>様子<span class="sm">が</span>よくわかります。
+        </p>
+        <div class="voice-meta">
+          <div class="voice-avatar">&#x1F469;</div>
+          <div>
+            <div class="voice-name">K.M さん</div>
+            <div class="voice-detail">3歳<span class="sm">の</span>お子さま<span class="sm">の</span>お母さま</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card reveal reveal-delay-1">
+        <div class="voice-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="voice-text">
+          給食<span class="sm">が</span>本当<span class="sm">に</span>おいしいらしく、家<span class="sm">では</span>食べない野菜<span class="sm">も</span>園<span class="sm">では</span>完食して帰ってきます（笑）。畑<span class="sm">で</span>育てた野菜<span class="sm">を</span>食べる体験<span class="sm">が</span>、食<span class="sm">への</span>興味<span class="sm">に</span>つながっている<span class="sm">と</span>感じます。
+        </p>
+        <div class="voice-meta">
+          <div class="voice-avatar">&#x1F468;</div>
+          <div>
+            <div class="voice-name">T.S さん</div>
+            <div class="voice-detail">4歳<span class="sm">の</span>お子さま<span class="sm">の</span>お父さま</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card reveal reveal-delay-2">
+        <div class="voice-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="voice-text">
+          英語<span class="sm">の</span>歌<span class="sm">を</span>家<span class="sm">で</span>歌う<span class="sm">ように</span>なって驚きました。「勉強」<span class="sm">じゃなくて</span>「遊び」<span class="sm">として</span>英語<span class="sm">に</span>触れているから<span class="sm">こそ</span>、自然<span class="sm">に</span>身についている<span class="sm">んだと</span>思います。延長保育<span class="sm">も</span>あるので、仕事<span class="sm">との</span>両立<span class="sm">も</span>助かっています。
+        </p>
+        <div class="voice-meta">
+          <div class="voice-avatar">&#x1F469;</div>
+          <div>
+            <div class="voice-name">Y.A さん</div>
+            <div class="voice-detail">2歳<span class="sm">と</span>5歳<span class="sm">の</span>お子さま<span class="sm">の</span>お母さま</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave divider: ice → white -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#ffffff"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     ACCESS
+     =========================== -->
+<section class="access" id="access">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-label reveal">ACCESS & INFO</span>
+      <h2 class="section-title reveal" style="text-align:center;">
+        園<span class="sm">の</span><span class="highlight">ごあんない</span>
+      </h2>
+    </div>
+    <div class="access-grid">
+      <div class="access-map reveal">
+        <div class="access-map-placeholder">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0fc1ef" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>Google Map<span class="sm">を</span>埋め込み予定</p>
+          <p style="font-size:0.8rem;opacity:0.7;">福岡県糟屋郡志免町</p>
+        </div>
+      </div>
+      <div class="access-info reveal reveal-delay-1">
+        <table class="access-table">
+          <tr>
+            <th>園名</th>
+            <td>にじいろ保育園</td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>福岡県糟屋郡志免町<br>（詳細住所<span class="sm">は</span>見学予約時<span class="sm">に</span>ご案内）</td>
+          </tr>
+          <tr>
+            <th>対象年齢</th>
+            <td>0歳〜5歳</td>
+          </tr>
+          <tr>
+            <th>定員</th>
+            <td>30名</td>
+          </tr>
+          <tr>
+            <th>開園時間</th>
+            <td>7:00〜18:00<br><span style="font-size:0.82rem;color:var(--gray);">延長保育 18:00〜19:00</span></td>
+          </tr>
+          <tr>
+            <th>休園日</th>
+            <td>日曜・祝日・年末年始</td>
+          </tr>
+          <tr>
+            <th>電話</th>
+            <td><a href="tel:092-000-0000" style="color:var(--sky);font-weight:700;">092-000-0000</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave divider: white → sky(CTA) -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,50 C240,10 480,70 720,30 C960,-10 1200,60 1440,20 L1440,80 L0,80 Z" fill="#0fc1ef"/>
+  </svg>
+</div>
+
+<!-- ===========================
+     CTA FINAL
+     =========================== -->
+<section class="cta-final" id="contact">
+  <div class="cta-final-blob-1" aria-hidden="true"></div>
+  <div class="cta-final-blob-2" aria-hidden="true"></div>
+  <div class="container cta-final-content">
+    <p class="cta-final-catch reveal">まずは園<span class="sm">の</span>雰囲気<span class="sm">を</span>感じてみてください</p>
+    <h2 class="cta-final-title reveal">
+      見学予約、<br class="sp-only">受付中です
+    </h2>
+    <p class="cta-final-sub reveal">
+      お子さまと一緒<span class="sm">の</span>見学<span class="sm">も</span>大歓迎。<br>
+      園<span class="sm">での</span>過ごし方<span class="sm">や</span>雰囲気<span class="sm">を</span>、ぜひご自身<span class="sm">の</span>目<span class="sm">で</span>ご確認ください。
+    </p>
+    <div class="cta-loss reveal">
+      次<span class="sm">の</span>募集枠<span class="sm">は</span>残りわずか<span class="sm">と</span>なっています
+    </div>
+    <div class="cta-final-buttons reveal">
+      <a href="tel:092-000-0000" class="btn-cta-white">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        電話<span class="sm">で</span>予約
+      </a>
+      <a href="#" class="btn-cta-line">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        LINE<span class="sm">で</span>予約
+      </a>
+    </div>
+    <p class="cta-final-note reveal">受付時間：平日 8:00〜17:00 / 見学<span class="sm">は</span>随時対応</p>
+  </div>
+</section>
+
+<!-- ===========================
+     FOOTER
+     =========================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo">にじいろ保育園</div>
+    <div class="footer-address">
+      福岡県糟屋郡志免町 | TEL: 092-000-0000<br>
+      開園時間: 7:00〜19:00（延長保育あり）
+    </div>
+    <div class="footer-copy">&copy; 2026 にじいろ保育園 All Rights Reserved.</div>
+  </div>
+</footer>
+
+<!-- ===========================
+     JavaScript
+     =========================== -->
+<script>
+// Intersection Observer for reveal animations
+document.addEventListener('DOMContentLoaded', function() {
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(function(el) { observer.observe(el); });
+  } else {
+    reveals.forEach(function(el) { el.classList.add('visible'); });
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        var offset = 70;
+        var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Nav shadow on scroll
+  var nav = document.querySelector('.nav');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 60) {
+      nav.style.boxShadow = '0 4px 24px rgba(15,193,239,0.12)';
+    } else {
+      nav.style.boxShadow = '0 2px 16px rgba(15,193,239,0.08)';
+    }
+  }, { passive: true });
+});
+</script>
+
+</body>
+</html>
