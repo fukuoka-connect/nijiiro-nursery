@@ -68,6 +68,13 @@ a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { max-width: 100%; height: auto; display: block; }
 .sm { font-size: 0.78em; }
+br.pc-only { display: inline; }
+br.sp-only { display: none; }
+.phrase { display: inline-block; white-space: nowrap; }
+@media (max-width: 767px) {
+  br.pc-only { display: none; }
+  br.sp-only { display: inline; }
+}
 
 /* ===========================
    UTILITY
@@ -1068,12 +1075,14 @@ img { max-width: 100%; height: auto; display: block; }
   <div class="container hero-content">
     <p class="hero-catch-sub">ー 定員30名<span class="sm">の</span>ちいさな世界 ー</p>
     <h1 class="hero-catch">
-      <span class="line-1">「やってみたい！」<span class="sm">が</span></span>
-      <span class="line-2"><span class="pop-word">まいにち</span>あふれる場所</span>
+      <span class="line-1"><span class="phrase">「やってみたい！」<span class="sm">が</span></span></span>
+      <span class="line-2"><span class="pop-word">まいにち</span><span class="phrase">あふれる場所</span></span>
     </h1>
     <p class="hero-copy">
-      ひとり<span class="sm">ひとりの</span>「なんだろう？」<span class="sm">を</span>見逃さない。<br>
-      少人数<span class="sm">だから</span>できる、寄り添う保育<span class="sm">が</span>ここにあります。
+      <span class="phrase">ひとり<span class="sm">ひとりの</span></span><br class="sp-only">
+      <span class="phrase">「なんだろう？」<span class="sm">を</span>見逃さない。</span><br>
+      <span class="phrase">少人数<span class="sm">だから</span>できる、</span><br class="sp-only">
+      <span class="phrase">寄り添う保育<span class="sm">が</span></span><span class="phrase">ここにあります。</span>
     </p>
     <div class="hero-cta-area">
       <a href="#contact" class="btn-primary">
